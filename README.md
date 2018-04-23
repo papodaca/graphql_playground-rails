@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/graphql_playground-rails.svg)](https://badge.fury.io/rb/graphql_playground-rails)
 # GraphqlPlayground::Rails
 A blatant copy of [GraphiQL::Rails](https://github.com/rmosolgo/graphiql-rails) with much less functionality but with [GraphQL Playground](https://github.com/graphcool/graphql-playground) instead.
 
