@@ -13,7 +13,7 @@ module GraphqlPlayground
 
       helper_method :get_playground_version
       def get_playground_version
-        GraphqlPlayground::Rails::VERSION
+        GraphqlPlayground::Rails::PLAYGROUND_VERSION
       end
     end
   end
