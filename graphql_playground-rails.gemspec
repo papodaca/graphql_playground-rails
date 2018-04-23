@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = GraphqlPlayground::Rails::VERSION
   s.authors     = ["Ethan Apodaca"]
   s.email       = ["papodaca@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of GraphqlPlayground::Rails."
-  s.description = "TODO: Description of GraphqlPlayground::Rails."
+  s.homepage    = "https://github.com/papodaca/graphql_playground-rails"
+  s.summary     = "An engine to provide the GraphQL Playground"
+  s.description = "GraphQL Playground provides a UI similar to GraphiQL with more features"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"]

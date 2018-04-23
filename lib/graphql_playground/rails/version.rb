@@ -1,5 +1,5 @@
 module GraphqlPlayground
   module Rails
-    VERSION = '0.1.0'
+    VERSION = '1.5.6'
   end
 end

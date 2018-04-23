@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Graphql playground rails</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+  <link rel="shortcut icon" href="https://graphcool-playground.netlify.com/favicon.png">
+  <title>GraphQL Playground</title>
 
   <%= stylesheet_link_tag    "graphql_playground/rails/application", media: "all" %>
   <%= javascript_include_tag "graphql_playground/rails/application" %>
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/graphql-playground-react@<%= get_playground_version %>/build/static/css/index.css" />
+  <link rel="shortcut icon" href="//cdn.jsdelivr.net/npm/graphql-playground-react@<%= get_playground_version %>/build/favicon.png" />
+  <script src="//cdn.jsdelivr.net/npm/graphql-playground-react@<%= get_playground_version %>/build/static/js/middleware.js"></script>
 </head>
 <body>
-
 <%= yield %>
-
 </body>
 </html>
