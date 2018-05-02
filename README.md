@@ -28,7 +28,7 @@ Add the engine to `routes.rb`:
 Rails.application.routes.draw do
   # ...
   if Rails.env.development?
-    mount GraphqlPlayground::Rails::Engine, at: "/graphiql", graphql_path: "/your/endpoint"
+    mount GraphqlPlayground::Rails::Engine, at: "/graphql_playground", graphql_path: "/your/endpoint"
   end
 end
 ```
