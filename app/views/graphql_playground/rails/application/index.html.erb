@@ -48,7 +48,9 @@
 
     GraphQLPlayground.init(root, {
       "endpoint": "<%= get_endpoint_url %>",
-      "canSaveConfig": false
+			"settings": {
+				"request.credentials": "include"
+			}
     });
   });
 </script>
