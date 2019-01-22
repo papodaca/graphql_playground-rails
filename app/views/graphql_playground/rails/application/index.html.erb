@@ -36,7 +36,15 @@
     <span class="dGfHfc">GraphQL Playground</span>
   </div>
 </div>
-<div id="root" ></div>
+
+<%= content_tag :div, 'Loading...', id: 'root', data: {
+  graphql_endpoint_path: graphql_endpoint_path,
+  initial_query: GraphiQL::Rails.config.initial_query,
+  logo: GraphiQL::Rails.config.logo,
+  headers: GraphiQL::Rails.config.resolve_headers(self),
+  query_params: GraphiQL::Rails.config.query_params
+} %>
+
 <script type="text/javascript">
   window.addEventListener('load', function (event) {
     const loadingWrapper = document.getElementById('loading-wrapper');
