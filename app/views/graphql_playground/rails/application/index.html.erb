@@ -36,21 +36,21 @@
     <span class="dGfHfc">GraphQL Playground</span>
   </div>
 </div>
-<div id="root" ></div>
+
+<div id="root" />
+
 <script type="text/javascript">
   window.addEventListener('load', function (event) {
     const loadingWrapper = document.getElementById('loading-wrapper');
-    if (loadingWrapper) {
-      loadingWrapper.classList.add('fadeOut');
-    }
+    loadingWrapper.classList.add('fadeOut');
     const root = document.getElementById('root');
     root.classList.add('playgroundIn');
 
     GraphQLPlayground.init(root, {
+      "canSaveConfig": false,
       "endpoint": "<%= get_endpoint_url %>",
-			"settings": {
-				"request.credentials": "include"
-			}
+      "settings": <%= raw(GraphqlPlayground::Rails.config.all_settings.to_json) %>,
+      "headers": <%= raw(GraphqlPlayground::Rails.config.resolve_headers(self).to_json) %>
     });
   });
 </script>
