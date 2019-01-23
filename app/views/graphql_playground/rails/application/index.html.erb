@@ -60,7 +60,7 @@
 				"request.credentials": "include"
 			},
 			"config": {
-			   "headers": <%= GraphqlPlayground::Rails.config.resolve_headers(self).to_json %>
+			   "headers": JSON.parse('<%= raw(GraphqlPlayground::Rails.config.resolve_headers(self).to_json) %>')
 			}
     });
   });
