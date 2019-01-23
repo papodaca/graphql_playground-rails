@@ -58,6 +58,9 @@
       "endpoint": "<%= get_endpoint_url %>",
 			"settings": {
 				"request.credentials": "include"
+			},
+			"config": {
+			   "headers": <%= GraphqlPlayground::Rails.config.resolve_headers(self) %>
 			}
     });
   });
