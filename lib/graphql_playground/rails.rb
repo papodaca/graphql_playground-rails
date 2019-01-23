@@ -4,6 +4,10 @@ require "graphql_playground/rails/config"
 
 module GraphqlPlayground
   module Rails
-    # Your code goes here...
+    class << self
+      attr_accessor :config
+    end
+
+    self.config = Config.new
   end
 end
