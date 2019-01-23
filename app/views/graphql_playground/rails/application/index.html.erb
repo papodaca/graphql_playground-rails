@@ -39,10 +39,10 @@
 
 <%= content_tag :div, 'Loading...', id: 'root', data: {
   graphql_endpoint_path: get_endpoint_url,
-  initial_query: GraphiQL::Rails.config.initial_query,
-  logo: GraphiQL::Rails.config.logo,
-  headers: GraphiQL::Rails.config.resolve_headers(self),
-  query_params: GraphiQL::Rails.config.query_params
+  initial_query: GraphqlPlayground::Rails.config.initial_query,
+  logo: GraphqlPlayground::Rails.config.logo,
+  headers: GraphqlPlayground::Rails.config.resolve_headers(self),
+  query_params: GraphqlPlayground::Rails.config.query_params
 } %>
 
 <script type="text/javascript">
