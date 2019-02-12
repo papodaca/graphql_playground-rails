@@ -7,12 +7,8 @@
   <link rel="shortcut icon" href="https://graphcool-playground.netlify.com/favicon.png">
   <title>GraphQL Playground</title>
 
-  <%= stylesheet_link_tag    "graphql_playground/rails/application", media: "all" %>
-  <%= javascript_include_tag "graphql_playground/rails/application" %>
-
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/graphql-playground-react@<%= get_playground_version %>/build/static/css/index.css" />
-  <link rel="shortcut icon" href="//cdn.jsdelivr.net/npm/graphql-playground-react@<%= get_playground_version %>/build/favicon.png" />
-  <script src="//cdn.jsdelivr.net/npm/graphql-playground-react@<%= get_playground_version %>/build/static/js/middleware.js"></script>
+  <%= stylesheet_link_tag    "graphql_playground/application", media: "all" %>
+  <%= javascript_include_tag "graphql_playground/application" %>
 </head>
 <body>
 <%= yield %>
