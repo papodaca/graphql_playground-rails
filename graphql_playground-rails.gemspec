@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = "GraphQL Playground provides a UI similar to GraphiQL with more features"
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,config,db,lib,vendor}/**/*", "LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 5.1", ">= 5.1.0"
 end
