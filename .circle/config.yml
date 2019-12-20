@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  publish:
+    docker:
+      - image: artifacts.dox.support/core_deployments:latest
+        auth:
+          username: $NEXUS_PULL_USER
+          password: $NEXUS_PULL_PASS
+    steps:
+      - checkout
+      - setup_remote_docker:
+      - run: publish_python
