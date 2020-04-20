@@ -36,7 +36,7 @@ end
 ### Configure
 
 ```ruby
-# config/initilizers/graphql_playground.rb
+# config/initializers/graphql_playground.rb
 # All config options have a default that sould work out of the box
 GraphqlPlayground::Rails.configure do |config|
   config.headers = {
