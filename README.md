@@ -1,3 +1,4 @@
+
 [![Gem Version](https://badge.fury.io/rb/graphql_playground-rails.svg)](https://badge.fury.io/rb/graphql_playground-rails)
 # GraphqlPlayground::Rails
 A blatant copy of [GraphiQL::Rails](https://github.com/rmosolgo/graphiql-rails) with much less functionality but with [GraphQL Playground](https://github.com/graphcool/graphql-playground) instead.
@@ -40,7 +41,7 @@ end
 # All config options have a default that sould work out of the box
 GraphqlPlayground::Rails.configure do |config|
   config.headers = {
-    'X-Auth-Header' => (view_context) -> { "123" }
+    'X-Auth-Header' => ->(view_context) { "123" }
   }
   config.title = "Playground"
   config.csrf = true
