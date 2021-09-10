@@ -52,7 +52,7 @@ GraphqlPlayground::Rails.configure do |config|
   config.playground_css_url = "/assets/playground.css"
   # see: https://github.com/prisma-labs/graphql-playground#settings
   config.settings = {
-    "editor.polling.enable": false
+    "schema.polling.enable": false
   }
 end
 ```
